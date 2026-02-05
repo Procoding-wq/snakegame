@@ -1,7 +1,42 @@
-This project is a simple Snake Game developed using Python and Django for learning and practice purposes. The game runs in a web browser and demonstrates how Django can be used to serve a game interface while the actual game logic is handled using HTML, CSS, and JavaScript. The objective of the game is to control the snake using keyboard arrow keys, eat food to increase the score and length of the snake, and avoid collisions with the walls or the snake’s own body.
+Snake Game Using Python and Django
 
-The backend of this project is built with Django, which is responsible for routing URLs, rendering templates, and managing the project structure. The frontend consists of a single HTML file where the game canvas is displayed, along with CSS for basic styling and JavaScript for handling snake movement, collision detection, score updates, and game-over logic. The game responds to real-time keyboard input and updates the screen accordingly.
+This project is a simple *Snake Game* developed using *Python and Django* for learning and practice purposes. The game runs in a web browser and demonstrates how Django can be used to serve a game interface while the core game logic is handled on the frontend using *HTML, CSS, and JavaScript*.
 
-To run this project, Django must be installed on the system. After navigating to the project directory, database migrations should be applied and the Django development server should be started. Once the server is running, the game can be accessed by opening the local server address in a web browser. The game starts immediately when the page loads and can be controlled using the arrow keys on the keyboard.
+The objective of the game is to control the snake using the keyboard arrow keys, eat food to increase the snake’s length and score, and avoid collisions with the walls or the snake’s own body. The game responds to real-time keyboard input and ends when a collision occurs.
 
-This Snake Game project is intended for beginners who want to understand how Python and Django work together with frontend technologies. It helps in learning Django project structure, URL routing, template usage, and integrating JavaScript-based game logic within a Django application. The project can be extended further by adding features such as difficulty levels, restart functionality, high score saving, animations, and sound effects.
+## Project Structure and Technologies
+
+### Backend (Django)
+Django is responsible for managing the project structure, handling URL routing, and rendering templates. It serves the frontend files to the browser while the game logic remains on the client side.
+
+### Frontend (HTML, CSS, JavaScript)
+The frontend consists of a single HTML page where the game canvas is displayed.
+- *HTML* is used to structure the game interface  
+- *CSS* provides basic styling  
+- *JavaScript* handles snake movement, collision detection, food generation, score updates, and game-over logic  
+
+## How to Run the Project
+
+1. Install Django on your system.
+2. Navigate to the project directory.
+3. Apply database migrations.
+4. Start the Django development server.
+5. Open the local server address in a web browser to play the game.
+
+The game starts automatically when the page loads and can be controlled using the keyboard arrow keys.
+
+## Learning Outcomes
+
+This project is intended for beginners who want to understand how *Python and Django integrate with frontend technologies*. It helps in learning:
+- Django project structure
+- URL routing
+- Template rendering
+- Integrating JavaScript-based game logic within a Django application
+
+## Future Enhancements
+
+The project can be extended with additional features such as:
+- Difficulty levels
+- Restart and pause functionality
+- High score saving
+- Animations and sound effects
