@@ -155,4 +155,113 @@
  Quit the server with CONTROL-C.
  
  
- ### Access the …
+ ### Access the the Game
+ 
+ Open your web browser and navigate to:
+ 
+ http://127.0.0.1:8000/
+ 
+ 
+ Or:
+ 
+ http://localhost:8000/
+ 
+ 
+ ## How to Play
+ 
+ 1. Click the *"▶ Start Game"* button to begin
+ 2. Use the arrow buttons on screen OR keyboard arrow keys to control the snake:
+    - ⬆ Up Arrow - Move Up
+    - ⬇ Down Arrow - Move Down
+    - ⬅ Left Arrow - Move Left
+    - ➡ Right Arrow - Move Right
+ 3. Eat the red food to grow and increase your score
+ 4. Avoid hitting the walls or your own tail!
+ 5. Game ends when you collide with a wall or yourself
+ 
+ ## Project Structure
+ 
+ 
+ snakegame/
+ ├── manage.py              # Django management script
+ ├── views.py               # View function to render the game
+ ├── urls.py                # URL routing for the app
+ ├── snake.html             # Game interface with HTML5 Canvas
+ ├── apps.py                # App configuration
+ ├── models.py              # Database models
+ ├── admin.py               # Admin configuration
+ ├── tests.py               # Unit tests
+ ├── db.sqlite3             # SQLite database
+ ├── README.md              # This file
+ └── sankegame/             # Main project directory (may need to create)
+     ├── __init__.py
+     ├── settings.py        # Django settings
+     └── urls.py            # Main URL configuration
+ 
+ 
+ ## Technologies Used
+ 
+ ### Backend (Django)
+ Django is responsible for managing the project structure, handling URL routing, and rendering templates. It serves the frontend files to the browser while the game logic remains on the client side.
+ 
+ ### Frontend (HTML, CSS, JavaScript)
+ The frontend consists of a single HTML page where the game canvas is displayed:
+ - *HTML* - Structure of the game interface  
+ - *CSS* - Basic styling and layout
+ - *JavaScript* - Snake movement, collision detection, food generation, score updates, and game logic
+ 
+ ## Troubleshooting
+ 
+ ### Django Not Found
+ If you get an error about Django not being installed:
+ bash
+ pip install django
+ 
+ 
+ ### Settings Module Error
+ If you get ModuleNotFoundError: No module named 'sankegame.settings':
+ - Follow *Step 4* above to create the settings module
+ - Make sure the sankegame directory exists with __init__.py and settings.py
+ 
+ ### Template Not Found
+ If you get a template error:
+ - Make sure snake.html is in the correct location: snakegame/templates/snakegame/snake.html
+ - Or update the template path in views.py
+ 
+ ### Port Already in Use
+ If port 8000 is already in use, run the server on a different port:
+ bash
+ python manage.py runserver 8080
+ 
+ Then access at http://127.0.0.1:8080/
+ 
+ ### Permission Errors
+ Make sure you have write permissions in the project directory. If using a virtual environment, make sure it's activated.
+ 
+ ## Learning Outcomes
+ 
+ This project is intended for beginners who want to understand how Python and Django integrate with frontend technologies. It helps in learning:
+ - Django project structure and configuration
+ - URL routing and view functions
+ - Template rendering
+ - Integrating JavaScript-based game logic within a Django application
+ - Canvas API for game development
+ 
+ ## Future Enhancements
+ 
+ The project can be extended with additional features such as:
+ - Difficulty levels (speed adjustment)
+ - Restart and pause functionality
+ - High score saving to database
+ - Animations and sound effects
+ - Multiplayer support
+ - Mobile-friendly touch controls
+ - Leaderboard system
+ 
+ ## License
+ 
+ This is a simple educational project. Feel free to modify and use as needed.
+ 
+ ## Contributing
+ 
+ Feel free to fork this project and submit pull requests for any improvements!
